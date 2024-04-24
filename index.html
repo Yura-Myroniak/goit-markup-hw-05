@@ -343,17 +343,21 @@
         <div class="footer-wrap">
             <p class="footer-text-item">Subscribe</p>
             <form class="footer-form">
-                <label>
+                <label class="footer-label">
                     <input type="email" name="footer-email" placeholder="E-mail" class="footer-input">
-                    <button type="submit" class="footer-btn">Subscribe</button>
                 </label>
+                <button type="submit" class="footer-btn">Subscribe
+                    <svg class="footer-icon-telegram" width="24" height="24">
+                        <use href="./images/icons.svg#icon-Frame"></use>
+                    </svg>
+                </button>
             </form>
             </div>
         </div>
         
     </footer>
 
-    <div class="backdrop ">
+    <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-open-btn">
                 <svg class="icon-x" width="8" height="8">
@@ -386,14 +390,14 @@
                 <use href="./images/icons.svg#icon-Vector-email"></use>
             </svg></div>
         </div>
-        <div class="modal-field">
+        <div class="modal-field-wrap">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-text"></textarea>
         </div>
-        <div class="modal-field">
-            <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden" value="true">
-        <label for="policy" class="check-text"> <span>
-            <svg class="check-icon" width="10" height="10">
+        <div class="modal-field-polity">
+            <input type="checkbox" name="user-privacy"  id="user-privacy" class="modal-check visually-hidden" value="true">
+        <label for="user-privacy    " class="check-text"> <span class="modal-span">
+            <svg class="check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-Check"></use>
             </svg>
         </span>I accept the terms and conditions of the<a href="" class="modal-text-check">Privacy Policy</a></label>
